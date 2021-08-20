@@ -1,0 +1,8 @@
+com/ddd/workshop/domain/ProductArchive.java
+ com.ddd.workshop.domain.ProductArchive
+com/ddd/workshop/domain/Item.java
+ com.ddd.workshop.domain.Item
+com/ddd/workshop/domain/Cart.java
+ com.ddd.workshop.domain.Cart
+com/ddd/workshop/domain/Product.java
+ com.ddd.workshop.domain.Product

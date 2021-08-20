@@ -1,0 +1,4 @@
+com/ddd/workshop/domain/CartTest.java
+ com.ddd.workshop.domain.CartTest
+com/ddd/workshop/domain/ProductArchiveTest.java
+ com.ddd.workshop.domain.ProductArchiveTest
