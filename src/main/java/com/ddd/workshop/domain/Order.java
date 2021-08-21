@@ -3,13 +3,13 @@ package com.ddd.workshop.domain;
 import java.util.List;
 
 public class Order {
-    private List<Item> items;
+    private List<Product> products;
 
-    public Order(List<Item> items) {
-        this.items = items;
+    public Order(List<Product> items) {
+        this.products = items;
     }
 
-    public List<Item> getItems() {
-        return items;
+    public List<Product> getProducts() {
+        return products;
     }
 }

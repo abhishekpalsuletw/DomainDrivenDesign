@@ -3,8 +3,6 @@ package com.ddd.workshop.domain.domain_service;
 import com.ddd.workshop.domain.*;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class OrderCreatorTest {
 
     @Test
@@ -13,7 +11,7 @@ class OrderCreatorTest {
         c.addItem(new Item(1,new Product("Bat",new Price(30.0))));
         Order order = OrderCreator.createOrder(c);
         assert c.isCheckedOut();
-        assert order.getItems().size() == 1;
+        assert order.getProducts().size() == 1;
     }
 
 }

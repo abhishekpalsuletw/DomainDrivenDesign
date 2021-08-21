@@ -44,8 +44,8 @@ public class Cart {
         return Objects.equals(cardId, cart.cardId);
     }
 
-    public void setCheckedOut(boolean checkedOut) {
-        this.checkedOut = checkedOut;
+    public void checkout() {
+        this.checkedOut = true;
     }
 
     @Override
