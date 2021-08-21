@@ -10,10 +10,13 @@ class ProductArchiveTest {
 
     @Test
     void shouldShowAllTheRemovedItems() {
+
         ProductArchive productArchive = new ProductArchive();
         Cart c = new Cart();
-        Item item = new Item(1,new Product("IpadPro", 10d));
-        Item item2 = new Item(1,new Product("Bat", 20d));
+        Price price10 = new Price(10d);
+        Price price30 = new Price(30d);
+        Item item = new Item(1,new Product("IpadPro", price10));
+        Item item2 = new Item(1,new Product("Bat", price30));
         c.addItem(item);
         c.addItem(item2);
         c.removeItem(item,productArchive);
