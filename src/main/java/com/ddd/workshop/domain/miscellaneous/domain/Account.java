@@ -11,7 +11,7 @@ public class Account {
         return address;
     }
 
-    public void setAddress(Address address) {
+    public void updateAddress(Address address) {
         this.address = address;
     }
 }

@@ -22,7 +22,7 @@ public class Customer {
     public void updateAddress(Address address){
         this.address = address;
         for (Account a: accounts) {
-            a.setAddress(address);
+            a.updateAddress(address);
         }
     }
 }
