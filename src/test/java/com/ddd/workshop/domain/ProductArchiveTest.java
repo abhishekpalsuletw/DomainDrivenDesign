@@ -12,8 +12,8 @@ class ProductArchiveTest {
     void shouldShowAllTheRemovedItems() {
         ProductArchive productArchive = new ProductArchive();
         Cart c = new Cart();
-        Item item = new Item(1,new Product("IpadPro"));
-        Item item2 = new Item(1,new Product("Bat"));
+        Item item = new Item(1,new Product("IpadPro", 10d));
+        Item item2 = new Item(1,new Product("Bat", 20d));
         c.addItem(item);
         c.addItem(item2);
         c.removeItem(item,productArchive);

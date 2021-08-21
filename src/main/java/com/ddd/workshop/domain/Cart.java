@@ -4,10 +4,10 @@ import java.util.*;
 
 public class Cart {
     private List<Item> items;
-    private Long cardId;
+    private UUID cardId;
 
-    public Cart(long id) {
-        this.cardId = id;
+    public Cart() {
+        this.cardId = UUID.randomUUID();
         this.items = new ArrayList<>();
     }
     public void addItem(Item item){
@@ -25,7 +25,7 @@ public class Cart {
         items.remove(item);
     }
 
-    public Long getCardId() {
+    public UUID getCardId() {
         return cardId;
     }
 
