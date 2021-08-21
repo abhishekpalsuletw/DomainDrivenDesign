@@ -5,28 +5,32 @@ import java.util.Objects;
 
 public class Product {
     private String name;
+    private Price price;
 
-    private Double price;
-    private Currency currency;
+    public Product(String name, Currency curr, Price price) {
+        this.name = name;
+        this.price = price;
+    }
+
+    public Product(String name, Price price) {
+        this.name = name;
+        this.price = price;
+    }
 
     public String getName() {
         return name;
     }
 
-    public Double getPrice() {
+    public Price getPrice() {
         return price;
     }
 
-    public void setPrice(Double price) {
+    public void setPrice(Price price) {
         this.price = price;
     }
 
-    public Currency getCurrency() {
-        return currency;
-    }
-
-    public void setCurrency(Currency currency) {
-        this.currency = currency;
+    public static Price getDiscountedPrice(Price price,int discount){
+        return new Price(price.getPrice() - (price.get*discount/100));
     }
 
     @Override
@@ -42,15 +46,5 @@ public class Product {
         return Objects.hash(name);
     }
 
-    public Product(String name, Currency curr, Double price) {
-        this.name = name;
-        this.currency = curr;
-        this.price = price;
-    }
 
-    public Product(String name, Double price) {
-        this.name = name;
-        this.currency = Currency.getInstance("INR");
-        this.price = price;
-    }
 }
