@@ -29,9 +29,7 @@ public class Product {
         this.price = price;
     }
 
-    public static Price getDiscountedPrice(Price price,int discount){
-        return new Price(price.getPrice() - (price.get*discount/100));
-    }
+
 
     @Override
     public boolean equals(Object o) {

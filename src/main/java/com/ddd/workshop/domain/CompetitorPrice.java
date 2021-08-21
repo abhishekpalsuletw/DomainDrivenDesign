@@ -5,9 +5,14 @@ import java.util.Map;
 
 public class CompetitorPrice {
 
-    private Map<String, Price> pricesMap = new HashMap<>();
+    private Map<String, Price> pricesMap;
 
-    public void addPrice(String productName, Price price){
-        this.pricesMap.put(productName, price);
+    public CompetitorPrice() {
+        this.pricesMap = new HashMap<>();
+        pricesMap.put("Bat",new Price(10.0));
+        pricesMap.put("Ball",new Price(10.0));
+    }
+    public Price getPrice(String product){
+        return this.pricesMap.get(product);
     }
 }
