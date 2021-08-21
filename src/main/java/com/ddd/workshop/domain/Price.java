@@ -4,8 +4,8 @@ import java.util.Currency;
 import java.util.Objects;
 
 public class Price {
-    private Currency currency;
-    private Double price;
+    private final Currency currency;
+    private final Double price;
 
     public Price(Currency currency, Double price) {
         this.currency = currency;

@@ -1,4 +1,8 @@
+com/ddd/workshop/domain/CompetitorBasedPricerTest.java
+ com.ddd.workshop.domain.CompetitorBasedPricerTest
 com/ddd/workshop/domain/CartTest.java
  com.ddd.workshop.domain.CartTest
+com/ddd/workshop/domain/domain_service/OrderCreatorTest.java
+ com.ddd.workshop.domain.domain_service.OrderCreatorTest
 com/ddd/workshop/domain/ProductArchiveTest.java
  com.ddd.workshop.domain.ProductArchiveTest

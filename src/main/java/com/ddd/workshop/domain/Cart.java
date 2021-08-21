@@ -6,25 +6,32 @@ public class Cart {
     private List<Item> items;
     private UUID cardId;
 
+    private boolean checkedOut;
+
+    public boolean isCheckedOut() {
+        return checkedOut;
+    }
+
     public Cart() {
         this.cardId = UUID.randomUUID();
         this.items = new ArrayList<>();
+        this.checkedOut = false;
     }
+
     public void addItem(Item item){
         this.items.add(item);
     }
     public List<Item> getAllItems(){
         return Collections.unmodifiableList(items);
     }
-
     public void removeItem(Item item) {
         items.remove(item);
     }
+
     public void removeItem(Item item,ProductArchive productArchive) {
         productArchive.archiveItem(item);
         items.remove(item);
     }
-
     public UUID getCardId() {
         return cardId;
     }
@@ -35,6 +42,10 @@ public class Cart {
         if (o == null || getClass() != o.getClass()) return false;
         Cart cart = (Cart) o;
         return Objects.equals(cardId, cart.cardId);
+    }
+
+    public void setCheckedOut(boolean checkedOut) {
+        this.checkedOut = checkedOut;
     }
 
     @Override

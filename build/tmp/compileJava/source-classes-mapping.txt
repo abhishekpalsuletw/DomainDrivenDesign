@@ -1,8 +1,18 @@
+com/ddd/workshop/domain/CompetitorPrice.java
+ com.ddd.workshop.domain.CompetitorPrice
 com/ddd/workshop/domain/ProductArchive.java
  com.ddd.workshop.domain.ProductArchive
+com/ddd/workshop/domain/domain_service/CompetitorBasedPricer.java
+ com.ddd.workshop.domain.domain_service.CompetitorBasedPricer
 com/ddd/workshop/domain/Item.java
  com.ddd.workshop.domain.Item
-com/ddd/workshop/domain/Cart.java
- com.ddd.workshop.domain.Cart
+com/ddd/workshop/domain/Price.java
+ com.ddd.workshop.domain.Price
 com/ddd/workshop/domain/Product.java
  com.ddd.workshop.domain.Product
+com/ddd/workshop/domain/Order.java
+ com.ddd.workshop.domain.Order
+com/ddd/workshop/domain/Cart.java
+ com.ddd.workshop.domain.Cart
+com/ddd/workshop/domain/domain_service/OrderCreator.java
+ com.ddd.workshop.domain.domain_service.OrderCreator
