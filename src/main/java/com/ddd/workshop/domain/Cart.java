@@ -1,13 +1,13 @@
 package com.ddd.workshop.domain;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class Cart {
     private List<Item> items;
+    private Long cardId;
 
-    public Cart() {
+    public Cart(long id) {
+        this.cardId = id;
         this.items = new ArrayList<>();
     }
     public void addItem(Item item){
@@ -25,5 +25,20 @@ public class Cart {
         items.remove(item);
     }
 
+    public Long getCardId() {
+        return cardId;
+    }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Cart cart = (Cart) o;
+        return Objects.equals(cardId, cart.cardId);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(cardId);
+    }
 }
